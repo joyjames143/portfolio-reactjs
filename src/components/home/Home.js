@@ -1,4 +1,4 @@
-import React, { useState,useEffect,componentDidMount,componentWillUnmount }  from 'react'
+import React, { useState,useEffect,useLayoutEffect,componentDidMount,componentWillUnmount }  from 'react'
 import './Home.css';
 import {Link} from "react-router-dom"
 
@@ -36,6 +36,10 @@ export default function Home() {
     window.addEventListener("resize", handleResize)
   })
 
+  useLayoutEffect(() => {
+    handleResize(); 
+  },[])
+  
   return (
     <div className='zero'>   
         
