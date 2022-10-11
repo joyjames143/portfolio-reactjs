@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+.zero{
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.zero .one{
+    height: 100vh;
+    width: 33.3vw;
+    background: 	#242124 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.zero .one .one-point-one{
+    height: 95%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.zero .one .one-point-one-img{
+    pointer-events: none;
+    position: absolute;
+    width: 30%;
+    height: 94%;
+    z-index: 1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+.zero .one span{
+    z-index: 2;
+}
+
+
+.zero .two{
+    height: 100vh;
+    width: 33.3vw;
+    background: 	#343434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.zero .two .two-point-one{
+    height: 95%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.zero .two .two-point-one-img{
+    pointer-events: none;
+    position: absolute;
+    width: 30%;
+    height: 94%;
+    z-index: 1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+.zero .two span{
+    z-index: 2;
+}
+
+
+
+
+.zero .three{
+    height: 100vh;
+    width: 33.3vw;
+    background: 	#242124 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.zero .three .three-point-one{
+    height: 95%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.zero .three .three-point-one-img{
+    pointer-events: none;
+    position: absolute;
+    width: 30%;
+    height: 94%;
+    z-index: 1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+.zero .three span{
+    z-index: 2;
+}
+
+
+.zero span{
+    cursor: pointer;
+    font-size:350%;
+    letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #39CCCC;
+    text-shadow: 6px 6px #ff1f8f, 12px 12px #01FF70;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* --------------------------------mobile version  -----------------------------------------*/
+/* ---------------------------------------------------------------------------------------- */
+@media only screen and (max-device-width: 1200px){
+    .zero{
+        display: flex;
+        flex-direction: column;
+    }
+    
+.zero .one{
+        height: 33.3vh;
+        width: 100vw;
+        background: 	#242124 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    
+.zero .one .one-point-one{
+        height: 90%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+.zero .one .one-point-one-img{
+        pointer-events: none;
+        position: absolute;
+        width: 90%;
+        height: 28%;
+        z-index: 1;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+    
+    
+.zero .one span{
+        z-index: 2;
+    }
+    
+    
+.zero .two{
+        height: 33.3vh;
+        width: 100vw;
+        background: 	#343434;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .two .two-point-one{
+        height: 90%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+.zero .two .two-point-one-img{
+        pointer-events: none;
+        position: absolute;
+        width: 90%;
+        height: 28%;
+        z-index: 1;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+    
+    
+.zero .two span{
+        z-index: 2;
+    }
+    
+    
+.zero .three{
+        height: 33.3vh;
+        width: 100vw;
+        background: 	#242124 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    
+.zero .three .three-point-one{
+        height: 90%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+.zero .three .three-point-one-img{
+        pointer-events: none;
+        position: absolute;
+        width: 90%;
+        height: 28%;
+        z-index: 1;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+    
+    
+.zero .three span{
+        z-index: 2;
+    }
+
+    
+.zero span{
+        cursor: pointer;
+        font-size:180%;
+        letter-spacing:0.1em;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #39CCCC;
+        text-shadow: 5px 5px #ff1f8f, 10px 10px #01FF70;
+    }
+}
+
+
+
+
+
+
+
+
+
