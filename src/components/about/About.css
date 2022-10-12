@@ -1,5 +1,8 @@
-
-
+:root {
+  font-family: 'Inter', sans-serif;
+  font-size: calc(.6rem + .4vw);
+  font-weight: 300;
+}
 .main-about-div{
     background: #343434 ;
 }

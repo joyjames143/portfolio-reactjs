@@ -3,9 +3,6 @@ import './Project.css';
 import {Link} from "react-router-dom"
 import Navbar from '../navbar/Navbar';
 
-import { ToastContainer, toast } from 'react-toastify';
-
-
 import { RiHome2Fill } from "react-icons/ri";
 import { ImProfile } from "react-icons/im";
 import { BsPhoneVibrateFill } from "react-icons/bs";
@@ -51,20 +48,6 @@ function CardsHolder({title,image,githubLink,liveLink, githubColor, hostcolor}) 
 
 
 export default function Project() {
- 
-  const notify = () => {
-    toast('🦄 Wow so easy!', {
-      position: "top-center",
-      autoClose: 10000000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-      });
-    console.log("tostigyed")
-  }
   return (
     <div className='project-main'>
 <Navbar/>
@@ -111,7 +94,7 @@ export default function Project() {
           </defs> 
         </svg>
 
-        
+
     </div>
   )
 }
