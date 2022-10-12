@@ -4,7 +4,7 @@ import './index.css';
 import Home from './components/home/Home.js';
 import Loading from './components/loading/Loading.js';
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
-import ReactLoading from 'react-loading';
+
 
 
 const LazyAbout = React.lazy(()=>import('./components/about/About.jsx'))

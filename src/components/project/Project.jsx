@@ -1,15 +1,6 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './Project.css';
-import {Link} from "react-router-dom"
 import Navbar from '../navbar/Navbar';
-
-import { RiHome2Fill } from "react-icons/ri";
-import { ImProfile } from "react-icons/im";
-import { BsPhoneVibrateFill } from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
-import { HiHome } from "react-icons/hi";
-import { GrProjects } from "react-icons/gr";
-
 
 import codepen from "../../assets/images/codepen.jpg"
 import covid from "../../assets/images/covid.jpg"

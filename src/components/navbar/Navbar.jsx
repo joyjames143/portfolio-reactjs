@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Navbar.css"
 import {Link} from "react-router-dom"
-import { RiHome2Fill } from "react-icons/ri";
-import { ImProfile } from "react-icons/im";
-import { BsPhoneVibrateFill ,BsCamera2} from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
-import { HiHome } from "react-icons/hi";
-import { GrProjects} from "react-icons/gr";
+// import { RiHome2Fill } from "react-icons/ri";
+// import { ImProfile } from "react-icons/im";
+// import { BsPhoneVibrateFill ,BsCamera2} from "react-icons/bs";
+// import { CgProfile } from "react-icons/cg";
+// import { HiHome } from "react-icons/hi";
+// import { GrProjects} from "react-icons/gr";
 import { GiAnvilImpact,GiBatMask,GiRotaryPhone,GiSpookyHouse } from "react-icons/gi";
 
 

@@ -1,4 +1,4 @@
-import React, { useState,useEffect,useLayoutEffect,componentDidMount,componentWillUnmount }  from 'react'
+import React, { useState,useEffect,useLayoutEffect}  from 'react'
 import './Home.css';
 import {Link} from "react-router-dom"
 

@@ -1,11 +1,10 @@
 import React from 'react'
 import "./About.css"
-import {Link} from "react-router-dom"
-import { HiHome } from "react-icons/hi";
-import { GrProjects } from "react-icons/gr";
-import { BsPhoneVibrateFill } from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
 import Navbar from '../navbar/Navbar';
+
+
+
+
 export default function About() {
   return (
     <div className='main-about-div'>
