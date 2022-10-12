@@ -5,34 +5,14 @@ import { HiHome } from "react-icons/hi";
 import { GrProjects } from "react-icons/gr";
 import { BsPhoneVibrateFill } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
+import Navbar from '../navbar/Navbar';
 
 
 export default function Contact() {
   return (
     <div className='contact-main'>
       
-      <div className='a-one'>
-              <div className='a-one-icon'>
-                <Link to="/" style={{ textDecoration: 'none' }}>
-                  <HiHome className='p-icon' size={30} color="black"/>
-                </Link>
-              </div>
-              <div className='a-one-icon' >
-                <Link to="/projects" style={{ textDecoration: 'none' }}>
-                  <GrProjects size={28} color="black"/>
-                </Link>
-              </div>
-              <div className='a-one-icon'>
-                <Link to="/about" style={{ textDecoration: 'none' }}>
-                  <CgProfile size={31} color="black"/>
-                </Link>
-              </div>
-              <div className='a-one-icon'>
-                <Link to="/contact" style={{ textDecoration: 'none' }}>
-                  <BsPhoneVibrateFill size={31} color="black"/>
-                </Link>
-              </div>
-    </div>
+      <Navbar/>
     <div className='the-main-article-div'>
 
     

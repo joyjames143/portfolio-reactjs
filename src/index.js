@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from "react-dom/client";
 import './index.css';
 import Home from './components/home/Home.js';
-import Loading from './components/loading/Loading';
+import Loading from './components/loading/Loading.js';
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import ReactLoading from 'react-loading';
 
 
-const LazyAbout = React.lazy(()=>import('./components/about/About'))
-const LazyContact = React.lazy(()=>import('./components/contact/Contact'))
-const LazyProject = React.lazy(()=>import('./components/project/Project'))
+const LazyAbout = React.lazy(()=>import('./components/about/About.jsx'))
+const LazyContact = React.lazy(()=>import('./components/contact/Contact.jsx'))
+const LazyProject = React.lazy(()=>import('./components/project/Project.jsx'))
 
 
 const router = createBrowserRouter([
@@ -19,15 +19,15 @@ const router = createBrowserRouter([
     },
     {
         path: "/about",
-        element: <React.Suspense fallback ={<ReactLoading type={"cubes"} color={"yellow"} height={667} width={375} />} ><LazyAbout/> </React.Suspense>,
+        element: <React.Suspense fallback ={<Loading/>} ><LazyAbout/> </React.Suspense>,
     },
     {
         path: "/contact",
-        element: <React.Suspense fallback='Loadding..'><LazyContact/> </React.Suspense>,
+        element: <React.Suspense fallback={<Loading/>}><LazyContact/> </React.Suspense>,
     },
     {
         path: "/projects",
-        element: <React.Suspense fallback='Loadding..'><LazyProject/> </React.Suspense>,
+        element: <React.Suspense fallback={<Loading/>}><LazyProject/> </React.Suspense>,
     },
   ]);
 

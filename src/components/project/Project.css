@@ -24,8 +24,7 @@
 
 .project-main .p-two{
     /* background-color: orange; */
-    margin:0 auto;
-    width: 90%;
+    margin-top:80px ;/* THIS LINE HELPA TO KEEP THE DIV BELOW THE NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -173,8 +172,8 @@
 }
 .project-main .test {
   /* line-height: 100vh; */
-  background: #E6E6FA;
-  color: grey;
+  background: #343434;
+  color: #f5f5f5;
 }
 .project-main .test {
   display: inline-block;
