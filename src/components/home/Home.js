@@ -30,11 +30,6 @@ export default function Home() {
         setimage3(narutodemon)
     }
   }
-
-  const handleLoad = () => {
-    console.log("handle load function is called---------")
-    setImage1Load(false)
-  }
   
   useEffect(() => {
     handleResize(); 
@@ -55,7 +50,7 @@ export default function Home() {
           <div className='one' >
               <div className='one-point-one'>
                 <Blurhash className='one-point-one-blurhash-img' hash="UPE^G~0~$gsB|^JmSgw^WFxYazNbFd$gWVW;"  resolutionX={32} resolutionY={32} punch={1}/>
-                <img className='one-point-one-img' src={image1}  alt="fireSpot" loading='eager' onLoad={()=>handleLoad()} />
+                <img className='one-point-one-img' src={image1}  alt="fireSpot" loading='eager' />
                   <span>PROJECTS</span>
               </div>
           </div>
@@ -64,6 +59,7 @@ export default function Home() {
         <Link to="/about" style={{ textDecoration: 'none' }}>
           <div className='two'>
               <div className='two-point-one'>
+                 <Blurhash className='one-point-one-blurhash-img' hash="U8J7N|-oxt%2~BRk4;ay0gNGIpt6NHIpjaoe"  resolutionX={32} resolutionY={32} punch={1}/>
                   <img className='two-point-one-img' src={image2}  alt="fireSpot" loading='lazy'/>
                   <span>KNOW ME ?</span>
                 </div>
@@ -73,6 +69,7 @@ export default function Home() {
         <Link to="/contact" style={{ textDecoration: 'none' }}>
           <div className='three' >
               <div className='three-point-one'>
+                  <Blurhash className='one-point-one-blurhash-img' hash="UPH[vxnisCj[}=jGSzoLtkR+OEkB%0S2Naoe"  resolutionX={32} resolutionY={32} punch={1}/>
                   <img className='three-point-one-img' src={image3}  alt="fireSpot" loading='lazy'/>
                   <span>CONTACT ME</span>
                 </div> 
