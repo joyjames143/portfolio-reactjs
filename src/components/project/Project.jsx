@@ -1,6 +1,7 @@
 import React from 'react'
 import './Project.css';
 import Navbar from '../navbar/Navbar';
+import { Blurhash } from "react-blurhash";
 
 import codepen from "../../assets/images/codepen.jpg"
 import covid from "../../assets/images/covid.jpg"
@@ -14,11 +15,14 @@ import zoom from "../../assets/images/zoom.jpg"
 
 
 
-function CardsHolder({title,image,githubLink,liveLink, githubColor, hostcolor}) {
+function CardsHolder({title,image,hashImagecode,githubLink,liveLink, githubColor, hostcolor}) {
   return (
     <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img className='p-image' src={image}/></div>
+          <div class="card_image">
+            <Blurhash className='p-blurhash' hash={hashImagecode}  resolutionX={32} resolutionY={32} punch={1}/>
+            <img className='p-image' src={image}/>
+            </div>
           <div class="card_content">
             <p class="small">{title} </p>
               <div className='paragraph'>
@@ -45,13 +49,13 @@ export default function Project() {
       <div class="test" contenteditable>
         <div className='p-two'>
               <ul class="cards">
-                <CardsHolder title={"Codpen Replica"} image={codepen} githubLink='https://github.com/joyjames143/jj-version-codepen' liveLink="https://codehere-jj.netlify.app/" githubColor="aqua" hostcolor='orangered' />
-                <CardsHolder title={"Corona Tracker"} image={covid} githubLink='https://github.com/joyjames143/covid-19-tracker' liveLink="https://jj-covid-tracker.netlify.app/" githubColor="aqua" hostcolor='orangered' />
-                <CardsHolder title={"Track Expense"} image={expense} githubLink='https://github.com/joyjames143/react-ExpenseTracer' liveLink="https://jj-expense-tracker.netlify.app/" githubColor="aqua" hostcolor='orangered' />
-                <CardsHolder title={"Movie DB "} image={movie} githubLink='https://github.com/joyjames143/movie-database-using-react' liveLink="https://joy-moviedb.netlify.app/" githubColor="aqua" hostcolor='orangered' />
-                <CardsHolder title={"E commerce"} image={shopping} githubLink='https://github.com/joyjames143/react-book-store' liveLink="https://react-phone-store-joy.netlify.app/" githubColor="aqua" hostcolor='orangered' />
-                <CardsHolder title={"Weather App"} image={weather} githubLink='https://github.com/joyjames143/weather-react' liveLink="https://weatheranyplace.netlify.app/" githubColor="aqua" hostcolor='orangered' />
-                <CardsHolder title={"Zoom Replica"} image={zoom} liveLink='https://jj-zc.herokuapp.com/' githubColor="aqua" hostcolor='orangered' />
+                <CardsHolder title={"Codpen Replica"} image={codepen} hashImagecode={'U35}jhs:0gR-F}W=~As,^+oLIoWWmja}T1oJ'} githubLink='https://github.com/joyjames143/jj-version-codepen' liveLink="https://codehere-jj.netlify.app/" githubColor="aqua" hostcolor='orangered' />
+                <CardsHolder title={"Corona Tracker"} image={covid} hashImagecode={'U7RW0c_N_3%100IBxv%L00t7%LIo00s8IUS7'} githubLink='https://github.com/joyjames143/covid-19-tracker' liveLink="https://jj-covid-tracker.netlify.app/" githubColor="aqua" hostcolor='orangered' />
+                <CardsHolder title={"Track Expense"} image={expense} hashImagecode={'U4Rp8._3-:~q00WBRVWB00WBt4Rj00WBt6WB'} githubLink='https://github.com/joyjames143/react-ExpenseTracer' liveLink="https://jj-expense-tracker.netlify.app/" githubColor="aqua" hostcolor='orangered' />
+                <CardsHolder title={"Movie DB "} image={movie} hashImagecode={'U4AAdrs900T1~po#D%Vr5ARi#*xw00XT?civ'} githubLink='https://github.com/joyjames143/movie-database-using-react' liveLink="https://joy-moviedb.netlify.app/" githubColor="aqua" hostcolor='orangered' />
+                <CardsHolder title={"E commerce"} image={shopping} hashImagecode={'U5Q0df-;%L~p00kDxuMx00flRlRk00RjRktS'} githubLink='https://github.com/joyjames143/react-book-store' liveLink="https://react-phone-store-joy.netlify.app/" githubColor="aqua" hostcolor='orangered' />
+                <CardsHolder title={"Weather App"} image={weather} hashImagecode={'U?PGX3of~qt7aefQRjayM{a|WBayNGfQjZay'} githubLink='https://github.com/joyjames143/weather-react' liveLink="https://weatheranyplace.netlify.app/" githubColor="aqua" hostcolor='orangered' />
+                <CardsHolder title={"Zoom Replica"} image={zoom} hashImagecode={'U33cIKTpUgD6x[bFnmV[Y=Q;y.y.n9VutkpG'} liveLink='https://jj-zc.herokuapp.com/' githubColor="aqua" hostcolor='orangered' />
             </ul>
           </div>
       </div>

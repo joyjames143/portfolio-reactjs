@@ -75,6 +75,13 @@
     text-align: center;
 }
 
+.card_image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .project-main .p-image {
   height: auto;
   max-width: 100%;
@@ -84,6 +91,24 @@
   object-fit: cover;
 }
 
+.project-main .p-blurhash{
+  /* pointer-events: none;
+  position: absolute !important;
+  width: 90% !important;
+  height: 28% !important;
+  z-index: 1;
+  object-fit: cover;
+  border-radius: 1rem; */
+
+
+  position: absolute;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  height: 300px !important;
+  width: 100% !important;
+  object-fit: cover;
+}
 
 .project-main .cards {
   display: flex;
