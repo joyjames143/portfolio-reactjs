@@ -1,6 +1,7 @@
 import React, { useState,useEffect,useLayoutEffect}  from 'react'
 import './Home.css';
 import {Link} from "react-router-dom"
+import { Blurhash } from "react-blurhash";
 
 //images imports
 import machine from "../../assets/images/machine.jpeg"
@@ -15,6 +16,8 @@ export default function Home() {
   const [image2, setimage2] = useState(twofacenaruto);
   const [image3, setimage3] = useState(narutodemon);
 
+  const [image1Load, setImage1Load] = useState(true);
+
   //choose the screen size 
   const handleResize = () => {
     if (window.innerWidth < 1200) {
@@ -26,6 +29,11 @@ export default function Home() {
         setimage2(twofacenaruto)
         setimage3(narutodemon)
     }
+  }
+
+  const handleLoad = () => {
+    console.log("handle load function is called---------")
+    setImage1Load(false)
   }
   
   useEffect(() => {
@@ -44,12 +52,12 @@ export default function Home() {
     <div className='zero'>   
         
         <Link to="/projects" style={{ textDecoration: 'none' }}>
-          <div className='one'  >
+          <div className='one' >
               <div className='one-point-one'>
-                  <img className='one-point-one-img' src={image1}  alt="fireSpot" loading='lazy'/>
-                  <span>PROJECTS</span> 
+                <Blurhash className='one-point-one-blurhash-img' hash="UPE^G~0~$gsB|^JmSgw^WFxYazNbFd$gWVW;"  resolutionX={32} resolutionY={32} punch={1}/>
+                <img className='one-point-one-img' src={image1}  alt="fireSpot" loading='eager' onLoad={()=>handleLoad()} />
+                  <span>PROJECTS</span>
               </div>
-              
           </div>
         </Link>
 

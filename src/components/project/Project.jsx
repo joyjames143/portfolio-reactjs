@@ -29,7 +29,6 @@ function CardsHolder({title,image,githubLink,liveLink, githubColor, hostcolor}) 
                 {typeof liveLink === 'undefined' ? "" :<a href={liveLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' ,color: hostcolor}}>
                   <p class="smaller">LiveLink</p>
                 </a> }
-                
             </div>
           </div>
         </div>
