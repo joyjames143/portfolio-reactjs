@@ -54,7 +54,7 @@ export default function Home() {
           <div className='one' >
               <div className='one-point-one'>
                 <Blurhash className='one-point-one-blurhash-img' hash={hashcodeImage1}  resolutionX={32} resolutionY={32} punch={1}/>
-                <img className='one-point-one-img' src={image1}  alt="fireSpot" loading='eager' />
+                <img className='one-point-one-img' src={image1}  alt="fireSpot" loading='lazy' />
                   <span>PROJECTS</span>
               </div>
           </div>
@@ -64,7 +64,7 @@ export default function Home() {
           <div className='two'>
               <div className='two-point-one'>
                  <Blurhash className='one-point-one-blurhash-img' hash={hashcodeImage2}  resolutionX={32} resolutionY={32} punch={1}/>
-                  <img className='two-point-one-img' src={image2}  alt="fireSpot" loading='eager'/>
+                  <img className='two-point-one-img' src={image2}  alt="fireSpot" loading='lazy'/>
                   <span>KNOW ME ?</span>
                 </div>
           </div>
