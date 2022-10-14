@@ -18,6 +18,10 @@ export default function Home() {
 
   const [image1Load, setImage1Load] = useState(true);
 
+  const hashcodeImage1 = "|PE^G~0~$gsBNusnS3snWC|^JmSgw^Nbs-R+oLazWFxYazNbxDWWbGn%WVFd$gWVW;o0WCsnSgn%kCNuxFafW.oLjZa{WVODW;snjZbaWCoKWVa{S#snjGoeWCW:oLWVWos.WCoLoeWCoejZWWj[j[o1S2ayW;oJWWj[jG"
+  const hashcodeImage2 = "|8J7N|-oxt%2ay^jxZ?GoK~BRk4;ayfkj[oLxZs.0gNGIpt6IpR*RkR*oeNHIpjaoeRkWCR*t6WC%0RkR+WCt6t6s.j@R+={WCoes:xZf6oeoLoLNHayIpRkt6IpxZazt6xas:ayxZoLt6s:NHxZays.f6xZ%1s.WVs.oe"
+  const hashcodeImage3 = "|PH[vxnisCj[$%xGR*soxG}=jGSzoLxGoKs:WVWotkR+OEkBOBofjsa#j[%0S2Naoet6f*jGayf*-AsAt6s.s9xGsoayWCw_soods.jbxFS2S2afxFS2fks.f7oeR*WpWCwKW;$ioKNaW;WVjuR*SeWVoJsUWWbHnjj[R+"
+
   //choose the screen size 
   const handleResize = () => {
     if (window.innerWidth < 1200) {
@@ -49,7 +53,7 @@ export default function Home() {
         <Link to="/projects" style={{ textDecoration: 'none' }}>
           <div className='one' >
               <div className='one-point-one'>
-                <Blurhash className='one-point-one-blurhash-img' hash="UPE^G~0~$gsB|^JmSgw^WFxYazNbFd$gWVW;"  resolutionX={32} resolutionY={32} punch={1}/>
+                <Blurhash className='one-point-one-blurhash-img' hash={hashcodeImage1}  resolutionX={32} resolutionY={32} punch={1}/>
                 <img className='one-point-one-img' src={image1}  alt="fireSpot" loading='eager' />
                   <span>PROJECTS</span>
               </div>
@@ -59,8 +63,8 @@ export default function Home() {
         <Link to="/about" style={{ textDecoration: 'none' }}>
           <div className='two'>
               <div className='two-point-one'>
-                 <Blurhash className='one-point-one-blurhash-img' hash="U8J7N|-oxt%2~BRk4;ay0gNGIpt6NHIpjaoe"  resolutionX={32} resolutionY={32} punch={1}/>
-                  <img className='two-point-one-img' src={image2}  alt="fireSpot" loading='lazy'/>
+                 <Blurhash className='one-point-one-blurhash-img' hash={hashcodeImage2}  resolutionX={32} resolutionY={32} punch={1}/>
+                  <img className='two-point-one-img' src={image2}  alt="fireSpot" loading='eager'/>
                   <span>KNOW ME ?</span>
                 </div>
           </div>
@@ -69,7 +73,7 @@ export default function Home() {
         <Link to="/contact" style={{ textDecoration: 'none' }}>
           <div className='three' >
               <div className='three-point-one'>
-                  <Blurhash className='one-point-one-blurhash-img' hash="UPH[vxnisCj[}=jGSzoLtkR+OEkB%0S2Naoe"  resolutionX={32} resolutionY={32} punch={1}/>
+                  <Blurhash className='one-point-one-blurhash-img' hash={hashcodeImage3}  resolutionX={32} resolutionY={32} punch={1}/>
                   <img className='three-point-one-img' src={image3}  alt="fireSpot" loading='lazy'/>
                   <span>CONTACT ME</span>
                 </div> 
