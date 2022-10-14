@@ -72,7 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  /* width: 500px; */
 }
 
 
@@ -115,6 +115,13 @@
     vertical-align: middle;
     height: 210px;
     width: 100%;
+    object-fit: cover;
+  }
+  .project-main .p-blurhash{
+    max-width: 100%;
+    vertical-align: middle;
+    height: 210px !important;
+    width: 100% !important;
     object-fit: cover;
   }
 }

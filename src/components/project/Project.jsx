@@ -20,7 +20,7 @@ function CardsHolder({title,image,hashImagecode,githubLink,liveLink, githubColor
     <li class="cards_item">
         <div class="card">
           <div class="card_image">
-            <Blurhash className='p-blurhash' hash={hashImagecode}   punch={1}/>
+            <Blurhash className='p-blurhash' hash={hashImagecode}  punch={1}/>
             <img className='p-image' src={image} loading="lazy"/>
             </div>
           <div class="card_content">
