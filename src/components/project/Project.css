@@ -4,7 +4,6 @@
   display: none;
 }
 .project-main .p-main{
-    /* background-color: #111; */
     height: 100%;
     width: 100%;
 }
@@ -16,15 +15,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
 }
 .project-main .p-one .p-one-icon{
     padding: 0% 5% 0% 5%;
 }
 
 .project-main .p-two{
-    /* background-color: orange; */
-    margin-top:80px ;/* THIS LINE HELPA TO KEEP THE DIV BELOW THE NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    margin-top:80px ;/* THIS LINE HELP TO KEEP THE DIV BELOW THE NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -32,8 +29,7 @@
     align-content:space-around;
     gap: 50px 0px;
 }
-.project-main .p-two .p-two-project{
-    /* background-color: rebeccapurple; */
+/* .project-main .p-two .p-two-project{
     width: 550px;
     height: 400px;
     border: green;
@@ -46,7 +42,6 @@
     justify-content: center;
     width: 550px;
     height: 300px;
-    /* background-color: yellow; */
 }
 
 
@@ -58,7 +53,7 @@
     z-index: 1;
     object-fit: cover;
     justify-content: center;
-}
+} */
 
 
 
@@ -70,8 +65,6 @@
 }
 
 .project-main .p-two h2 {
-    /* font-size: 45px;
-    font-weight: 400; */
     text-align: center;
 }
 
@@ -87,26 +80,15 @@
   max-width: 100%;
   vertical-align: middle;
   height: 300px;
-  width: 100%;
+  width: 500px;
   object-fit: cover;
 }
 
 .project-main .p-blurhash{
-  /* pointer-events: none;
-  position: absolute !important;
-  width: 90% !important;
-  height: 28% !important;
-  z-index: 1;
-  object-fit: cover;
-  border-radius: 1rem; */
-
-
-  position: absolute;
-  height: auto;
   max-width: 100%;
   vertical-align: middle;
   height: 300px !important;
-  width: 100% !important;
+  width: 500px !important;
   object-fit: cover;
 }
 
@@ -150,9 +132,7 @@
 }
 
 .project-main .card {
-  /* background-color: white; */
   border-radius: 0.25rem;
-  /* box-shadow: #282C35; */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -163,7 +143,6 @@
 }
 
 .project-main .card_text {
-  /* color: #ffffff; */
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;    
@@ -179,7 +158,6 @@
 
 .project-main .paragraph{
   display: flex;
-  /* justify-content: center; */
   align-items: stretch;
   justify-content: space-around;
 }
@@ -190,13 +168,11 @@
 .project-main {
   font-family: 'Amatic SC', sans-serif;
   font-size: 100px;
-  /* background-color: #111; */
 }
 .project-main .test {
   animation: squiggly-anim 0.34s linear infinite;
 }
 .project-main .test {
-  /* line-height: 100vh; */
   background: #343434;
   color: #f5f5f5;
 }
