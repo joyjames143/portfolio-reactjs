@@ -107,6 +107,8 @@
 }
 .contact-main .button-group {
   margin-top: calc(var(--size-bezel) * 2.5);
+  display: flex;
+  justify-content: center;
 }
 .contact-main button {
   color: currentColor;
@@ -115,6 +117,7 @@
   border: none;
   border-radius: var(--size-radius);
   font-weight: 900;
+  font-size: 20px;
 }
 .contact-main button[type=reset] {
   background: var(--color-background);

@@ -1,9 +1,51 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Contact.css"
 import Navbar from '../navbar/Navbar';
 
 
 export default function Contact() {
+  const[name,setName] = useState("");
+  const[email,setEmail] = useState("");
+  const[phone,setPhone] = useState("");
+  const[topic,setTopic] = useState("");
+  const[content,setContent] = useState("");
+
+
+const onclickSend = async() =>{
+  console.log(name,email,phone,topic,content)
+
+  let jsonbody = {}
+
+  jsonbody["reciver_mail"] = "joyjames143007@gmail.com"
+  jsonbody["reciver_pass"] = "myhnqrocosbcoumt"
+
+
+  jsonbody["firstName"] = name
+  jsonbody["email"] = email
+  jsonbody["phone"] = phone
+  // jsonbody["topic"] = topic
+  jsonbody["message"] = content
+
+    let response = await fetch("https://email-server-node-js.onrender.com/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+        // "Access-Control-Allow-Origin":"*",
+        // "Access-Control-Request-Method":"*",
+        // "Access-Control-Allow-Methods":"GET,PUT,POST,DELETE,PATCH",
+        // "Access-Control-Allow-Headers":"Content-Type",
+        // "Access-Control-Expose-Headers":"Content-Type"
+      },
+      body: JSON.stringify(jsonbody),
+    });
+    console.log(JSON.stringify(jsonbody))
+    console.log(response)
+
+}
+
+
+
+
   return (
     <div className='contact-main'>
       
@@ -12,18 +54,17 @@ export default function Contact() {
 
     
   <article className="l-design-widht">
-    <h1>Mini CSS-vars Design System</h1>
+    <h1>Wanna see me? Wanna speak to me?</h1>
     <p>
-      Most of the projects I work on have about <mark>3</mark> important colors:
-      Main- , Accent- and Background-Color. Naturally tons of other colors are
-      used in a typical Project, but they are mostly used within specific
-      components.
+      If you are in a hurry and or really wanna speak to me faster here is mobile number
+       <mark>7010693566</mark> .
+       <br/>+91 is the country code as I'm from India
     </p>
     <p>
-      I find it useful to set those 3 colors as vars on the root and change them
-      in specific contexts. It turns out that the complexity of the components I
-      build is dramatically cut down by this. And also gives me a lot of control
-      over the cascade.
+      If you wanna mail me some details and can wait for some time for my reply you can fill the below form   
+    </p>
+    <p>
+      I'm really exicted to hear from you
     </p>
     <div className="card">
       <h2>
@@ -33,7 +74,7 @@ export default function Contact() {
         I'm James ,..what your's
       </h2>
       <label className="input">
-        <input className="input__field" type="text" placeholder=" " />
+        <input className="input__field" type="text" placeholder=" " onChange={e => setName(e.target.value)}/>
         <span className="input__label">Your Name</span>
       </label>
       {/* <div className="button-group">
@@ -50,22 +91,12 @@ export default function Contact() {
         how can i reach you ?
       </h2>
       <label className="input">
-        <input
-          className="input__field"
-          type="text"
-          placeholder=" "
-          
-        />
+        <input className="input__field" type="text" placeholder=" " onChange={e => setEmail(e.target.value)}/>
         <span className="input__label">Your Email </span>
       </label>
       <p>and / or</p>
       <label className="input">
-        <input
-          className="input__field"
-          type="text"
-          placeholder=" "
-          
-        />
+        <input className="input__field" type="text" placeholder=" " onChange={e => setPhone(e.target.value)} />
         <span className="input__label">Your Phone number</span>
       </label>
       {/* <div className="button-group">
@@ -81,10 +112,10 @@ export default function Contact() {
         What do you wanna talk about ?
       </h2>
       <label className="input">
-        <input className="input__field" type="text" placeholder=" " />
+        <input className="input__field" type="text" placeholder=" " onChange={e => setTopic(e.target.value)}/>
         <span className="input__label">Topic</span>
         <br/>
-        <textarea className="input__field" type="text" placeholder=" " />
+        <textarea className="input__field" type="text" placeholder=" " onChange={e => setContent(e.target.value)}/>
         
       </label>
       {/* <div className="button-group">
@@ -93,11 +124,10 @@ export default function Contact() {
       </div> */}
     </div>
     <div className="card card--inverted">
-      <h2>Colors</h2>
-      <p>Play around with the colors</p>
-      <input type="color" data-color="light" defaultValue="#ffffff" />
-      <input type="color" data-color="dark" defaultValue="#212121" />
-      <input type="color" data-color="signal" defaultValue="#fab700" />
+    <div className="button-group">
+        <button onClick={()=>onclickSend()}>Send</button>
+      </div>
+      
     </div>
   </article>
   </div>

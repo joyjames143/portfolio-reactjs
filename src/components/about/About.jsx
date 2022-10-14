@@ -58,9 +58,8 @@ export default function About() {
                 🎓React.js 🎓Node.js 🎓Python 🎓Java 🎓      
                   <br/>
                   <br/>
-                Stuck on a highway with the bike problem.
-                  <br/>
-                if it is about the bike repair i am studyiong about it
+                Stuck on a highway with the bike problem, Contact me i will hep you because
+                if it is about the bike i probably know/studying about it 
                 </p>  
             </div>
             {/* <h1>DASHES 😎</h1>
