@@ -1,7 +1,6 @@
 import React from 'react'
 import './Project.css';
 import Navbar from '../navbar/Navbar';
-import { Blurhash } from "react-blurhash";
 
 import codepen from "../../assets/images/codepen.jpg"
 import covid from "../../assets/images/covid.jpg"
@@ -21,7 +20,7 @@ function CardsHolder({title,image,hashImagecode,githubLink,liveLink, githubColor
         <div className="card">
           <div className="card_image">
             {/* <Blurhash className='p-blurhash' width={100} height={300} hash={hashImagecode}  punch={1}/> */}
-            <img className='p-image' src={image} loading="lazy"/>
+            <img className='p-image' src={image} loading="lazy" alt='screenshots'/>
             </div>
           <div className="card_content">
             <p className="small">{title} </p>

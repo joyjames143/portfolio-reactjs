@@ -62,7 +62,7 @@ export default function About() {
               <p>
                 Have quite some knowledge on Programming languages such as 
                   <br/>
-                🎓React.js 🎓Node.js 🎓Python 🎓Java 🎓      
+                🎓React.js  🎓Node.js  🎓Python  🎓Java  🎓Html  🎓Css  🎓Javascript 
                   <br/>
                   <br/>
                 Stuck on a highway with the bike problem, Contact me i will hep you because

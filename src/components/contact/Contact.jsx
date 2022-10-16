@@ -4,8 +4,6 @@ import Navbar from '../navbar/Navbar';
 import toast, { Toaster } from 'react-hot-toast';
 import { useLocation } from 'react-router-dom'
 
-import { BsLinkedin } from "react-icons/bs";
-
 var emailRegex = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
 
 
@@ -23,7 +21,7 @@ export default function Contact() {
   
 
   useEffect(() => {
-    if (location.state != "undefined"){
+    if (location.state !== "undefined"){
       setclicked(location.state.clicked)
     }
     
