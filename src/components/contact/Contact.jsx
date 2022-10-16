@@ -103,7 +103,7 @@ export default function Contact() {
       className: 'notify-alert',
     
       // Custom Icon
-      icon: '⚠️',
+      icon: '😵‍💫',
     
       // Change colors of success/error/loading icon
       iconTheme: {

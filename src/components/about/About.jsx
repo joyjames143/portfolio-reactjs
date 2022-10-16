@@ -29,28 +29,35 @@ export default function About() {
               </p>
             </div>
             
-            <h1>Experience 🍧</h1>
+            <h1>EXPERIENCE 🍧</h1>
             <div class="content v1">
               <p>
-                <span>ZOHO : [ dec 20201 - present ]</span>
+                <span>ZOHO : [ 👨‍⚖️ MEMBER TECHNICAL STAFF ]</span>
                       <br/>
-                  👉Feature that connects to different types of database and gives same format of output
+                  ⏰ DEC 2021 - present
                       <br/>
-                  👉That helps to integrate any application with different database
+                  👉 Developed a Library as a core member that connects to different types of database and gives same format of output, mostly json
                       <br/>
-                  👉Extensively worked on API
+                  👉 This Feature helps to integrate most application with different database types
                       <br/>
-                  👉Responsibilities include Apis, database integration & development (java, postgresql, odata)
+                  👉 Extensively worked on API
+                      <br/> 
+                  👉 Responsibilities include database integration, developnment and managing apis
+                      <br/> 
+                  👉 Java, postgresql, odata, apis, are some of the daily used things for development
                       <br/>
                       <br/>
-                      <span>COGNIZANT : [ mar 20201 - dec 2021 ]</span>
                       <br/>
-                  👉Feature that connects to different types of database and gives same format of output
+                <span>COGNIZANT : [  👨‍⚖️ PROGRAM ANALYST TRAINEE ]</span>
                       <br/>
-                  👉That helps to integrate any application with different database
+                  ⏰ MAR 2021 - DEC 2021
+                      <br/>
+                  👉 Got Trained on frontend UI development, python ,JavaScript, sql. 
+                      <br/>
+                  👉 Maintenance and development of analysis report for client services to access the viability of digital product
               </p>
             </div>
-            <h1>SKILL'S ⛷</h1>
+            <h1>SKILLS ⛷</h1>
             <div class="content v3">
               <p>
                 Have quite some knowledge on Programming languages such as 
