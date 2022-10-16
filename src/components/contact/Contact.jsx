@@ -147,7 +147,7 @@ const validateSendingData = () => {
   }
 
   if(phone.length !== 0){
-    if (Number.isInteger(Number(phone))){
+    if (!Number.isInteger(Number(phone))){
       throw new Error("phone number is invalid");
     }
     
