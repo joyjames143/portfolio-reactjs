@@ -206,7 +206,7 @@ const onclickSend = async(message,staytime,emoji) =>{
         <article className="l-design-widht">
         <div className="card card--inverted">
             <div className="button-group">
-              <a href={"https://google.com"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' , color:"white"}}>
+              <a href={"https://docs.google.com/document/d/1Rj6NfL5iXUP9zTWTWR6qqfrmBr7MA3w7/edit?usp=sharing&ouid=114927267130976560346&rtpof=true&sd=true"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' , color:"white"}}>
                 <button >Resume</button>
               </a>
                 <a href={"https://www.linkedin.com/in/joyjames--/"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'  , color:"white"}}>
