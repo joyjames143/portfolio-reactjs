@@ -4,6 +4,11 @@ import Navbar from '../navbar/Navbar';
 import toast, { Toaster } from 'react-hot-toast';
 import { useLocation } from 'react-router-dom'
 
+import { BsLinkedin } from "react-icons/bs";
+
+var emailRegex = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
+
+
 export default function Contact() {
   const[name,setName] = useState("");
   const[email,setEmail] = useState("");
@@ -58,7 +63,7 @@ export default function Contact() {
       {
         loading: 'Sending Mail',
         success: message,
-        error: "some thing happened,try again",
+        error: "error,try again",
       },
       
       {
@@ -84,6 +89,37 @@ export default function Contact() {
     );
   }
 
+  const notifyValidationError = (message) => {
+    toast(message, {
+      duration: 3000,
+      position: "top-right",
+    
+      // Styling
+      style: {
+       
+        background: '#333',
+        color: '#fff',
+      },
+      className: 'notify-alert',
+    
+      // Custom Icon
+      icon: '⚠️',
+    
+      // Change colors of success/error/loading icon
+      iconTheme: {
+        primary: '#000',
+        secondary: '#fff',
+      },
+    
+      // Aria
+      ariaProps: {
+        role: 'status',
+        'aria-live': 'polite',
+      },
+    });
+    
+  }
+
 const clearfields = () => {
     setName("")
     setEmail("")
@@ -92,9 +128,46 @@ const clearfields = () => {
     setContent("")
 }
 
+const validateSendingData = () => {
+  if (name.length < 3){
+    //name cannot be less than 3 letters
+    throw new Error("name should atleast have 3 letters");
+  }
+
+  if (email.length === 0 && phone.length === 0){
+    // any one should be given
+    throw new Error("email and phone both are empty");
+  }
+
+  if (email.length !== 0){
+    //check email validity
+    if (!emailRegex.test(email)){
+      throw new Error("email is invalid");
+    }
+  }
+
+  if (topic.length === 0){
+    //topic cannot be empty
+    throw new Error("topic is empty");
+  }
+
+  if (content.length === 0){
+    // content cannot be empty
+    throw new Error("content is empty");
+
+  }
+}
+
 const onclickSend = async(message,staytime,emoji) =>{
   // notify(message,staytime,emoji);
   console.log(name,email,phone,topic,content)
+  
+  try {
+    validateSendingData()
+  } catch (error) {
+    notifyValidationError(error.message)
+    return
+  }
 
   let jsonbody = {}
 
@@ -125,6 +198,17 @@ const onclickSend = async(message,staytime,emoji) =>{
       <Navbar/>
     <div className='the-main-article-div'>
         <article className="l-design-widht">
+        <div className="card card--inverted">
+            <div className="button-group">
+              <a href={"https://google.com"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' , color:"white"}}>
+                <button >Resume</button>
+              </a>
+                <a href={"https://www.linkedin.com/in/joyjames--/"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'  , color:"white"}}>
+              <button >LinkedIn</button>
+              </a>
+            </div>
+            
+          </div>
           <h1>Wanna see me? Wanna speak to me?</h1>
           <p>
             If you are in a hurry and or really wanna speak to me faster here is mobile number
@@ -137,6 +221,7 @@ const onclickSend = async(message,staytime,emoji) =>{
           <p>
             I'm really exicted to hear from you
           </p>
+          
           <div className="card">
             <h2>
               <svg className="icon" aria-hidden="true">
@@ -194,7 +279,7 @@ const onclickSend = async(message,staytime,emoji) =>{
               <button type="reset">Reset</button>
             </div> */}
           </div>
-          <div className="card card--inverted">
+          <div className="card card">
           <div className="button-group">
               <button onClick={()=>onclickSend("mail successfully sent" , 6000 , '👏' )}>Send</button>
               <Toaster />

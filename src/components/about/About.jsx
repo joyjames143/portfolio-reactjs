@@ -82,6 +82,7 @@ export default function About() {
             <div class="content v8">
               <p>assumenda odio alias modi et nihil tempora ut corporis officiis. Et dolorum vero ut unde repellat rem possimus dignissimos id modi dolor cum laudantium voluptatem et soluta internos. Id odio enim vel quasi nesciunt qui</p>
             </div> */}
+            
           </div>
           </div>
     </div>
