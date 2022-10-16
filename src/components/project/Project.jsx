@@ -17,21 +17,21 @@ import zoom from "../../assets/images/zoom.jpg"
 
 function CardsHolder({title,image,hashImagecode,githubLink,liveLink, githubColor, hostcolor}) {
   return (
-    <li class="cards_item">
-        <div class="card">
-          <div class="card_image">
-            {/* <Blurhash className='p-blurhash' hash={hashImagecode}  punch={1}/> */}
+    <li className="cards_item">
+        <div className="card">
+          <div className="card_image">
+            {/* <Blurhash className='p-blurhash' width={100} height={300} hash={hashImagecode}  punch={1}/> */}
             <img className='p-image' src={image} loading="lazy"/>
             </div>
-          <div class="card_content">
-            <p class="small">{title} </p>
+          <div className="card_content">
+            <p className="small">{title} </p>
               <div className='paragraph'>
                 {/* check if github link is present and live link is present only those links are populated */}
                 {typeof githubLink === 'undefined' ? "" :<a href={githubLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' ,color: githubColor}}>
-                  <p class="smaller">Github</p>
+                  <p className="smaller">Github</p>
                 </a>}
                 {typeof liveLink === 'undefined' ? "" :<a href={liveLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' ,color: hostcolor}}>
-                  <p class="smaller">LiveLink</p>
+                  <p className="smaller">LiveLink</p>
                 </a> }
             </div>
           </div>
@@ -46,9 +46,9 @@ export default function Project() {
     <div className='project-main'>
 <Navbar/>
         
-      <div class="test" contenteditable>
+      <div className="test" >
         <div className='p-two'>
-              <ul class="cards">
+              <ul className="cards">
                 <CardsHolder title={"Codpen Replica"} image={codepen} hashImagecode={'U35}jhs:0gR-F}W=~As,^+oLIoWWmja}T1oJ'} githubLink='https://github.com/joyjames143/jj-version-codepen' liveLink="https://codehere-jj.netlify.app/" githubColor="aqua" hostcolor='orangered' />
                 <CardsHolder title={"Corona Tracker"} image={covid} hashImagecode={'U7RW0c_N_3%100IBxv%L00t7%LIo00s8IUS7'} githubLink='https://github.com/joyjames143/covid-19-tracker' liveLink="https://jj-covid-tracker.netlify.app/" githubColor="aqua" hostcolor='orangered' />
                 <CardsHolder title={"Track Expense"} image={expense} hashImagecode={'U4Rp8._3-:~q00WBRVWB00WBt4Rj00WBt6WB'} githubLink='https://github.com/joyjames143/react-ExpenseTracer' liveLink="https://jj-expense-tracker.netlify.app/" githubColor="aqua" hostcolor='orangered' />
