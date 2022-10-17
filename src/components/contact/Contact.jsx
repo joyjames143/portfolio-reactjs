@@ -3,6 +3,8 @@ import "./Contact.css"
 import Navbar from '../navbar/Navbar';
 import toast, { Toaster } from 'react-hot-toast';
 import { useLocation } from 'react-router-dom'
+import { FaLinkedin, FaGithubSquare, } from "react-icons/fa";
+import { BsFileEarmarkPdfFill } from "react-icons/bs";
 
 var emailRegex = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
 
@@ -175,8 +177,8 @@ const onclickSend = async(message,staytime,emoji) =>{
 
   let jsonbody = {}
 
-  jsonbody["reciver_mail"] = "joyjames143007@gmail.com"
-  jsonbody["reciver_pass"] = "myhnqrocosbcoumt"
+  jsonbody["reciver_mail"] = "joy.james.professional@gmail.com"
+  jsonbody["reciver_pass"] = "zthxauntwkwctbtf"
 
 
   jsonbody["firstName"] = name
@@ -202,16 +204,18 @@ const onclickSend = async(message,staytime,emoji) =>{
       <Navbar/>
     <div className='the-main-article-div'>
         <article className="l-design-widht">
-        <div className="card card--inverted">
+          <div className="card card--inverted">
             <div className="button-group">
-              <a href={"https://docs.google.com/document/d/1Rj6NfL5iXUP9zTWTWR6qqfrmBr7MA3w7/edit?usp=sharing&ouid=114927267130976560346&rtpof=true&sd=true"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' , color:"white"}}>
-                <button >Resume</button>
-              </a>
                 <a href={"https://www.linkedin.com/in/joyjames--/"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'  , color:"white"}}>
-              <button >LinkedIn</button>
+              <FaLinkedin size={33} color="#343434"/>
+              </a>
+              <a href={"https://drive.google.com/file/d/1E6B9FO89nhfElEXnwplkUUdlpLDnPj3r/view?usp=sharing"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' , color:"white"}}>
+                <BsFileEarmarkPdfFill size={32} color="#343434"/>
+              </a>
+              <a href={"https://github.com/joyjames143"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'  , color:"white"}}>
+              <FaGithubSquare size={33} color="#343434"/>
               </a>
             </div>
-            
           </div>
           <h1>Wanna see me? Wanna speak to me?</h1>
           <p>

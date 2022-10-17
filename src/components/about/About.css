@@ -141,6 +141,14 @@
   }
   
 
+.about-footer-buttons-div{
+  display: flex;
+}
+.about-footer-buttons-div .about-button-group{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
   @media only screen and (max-device-width: 440px){
     .container h1 {
       font-size: 1.7rem;

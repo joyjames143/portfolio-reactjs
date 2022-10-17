@@ -2,7 +2,8 @@ import React from 'react'
 import "./About.css"
 import Navbar from '../navbar/Navbar';
 
-
+import { FaLinkedin, FaGithubSquare, } from "react-icons/fa";
+import { BsFileEarmarkPdfFill } from "react-icons/bs";
 
 
 export default function About() {
@@ -77,6 +78,20 @@ export default function About() {
             <div class="content v5">
               <p>🥋 To live is to risk it all otherwise, you’re just an inert chunk of randomly assembled molecules drifting wherever the universe blows you - rick and morty</p>
             </div>
+            <div className='about-footer-buttons-div'>
+              <div className="about-button-group">
+                  <a href={"https://www.linkedin.com/in/joyjames--/"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'  , color:"white"}}>
+                <FaLinkedin size={33} color="white"/>
+                </a>
+                <a href={"https://drive.google.com/file/d/1E6B9FO89nhfElEXnwplkUUdlpLDnPj3r/view?usp=sharing"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' , color:"white"}}>
+                  <BsFileEarmarkPdfFill size={32} color="white"/>
+                </a>
+                <a href={"https://github.com/joyjames143"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'  , color:"white"}}>
+                <FaGithubSquare size={33} color="white"/>
+                </a>
+            </div>
+            </div>
+            
             {/* <h1>DELETED 🙈2 </h1>
             <div class="content v6">
               <p>Ut aspernatur minus a provident dolorem qui temporibus iure non voluptas labore? Quo Quis velit qui magni minus non odit voluptatem eum veritatis quidem ut dolores error sit omnis libero.</p>
