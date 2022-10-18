@@ -177,8 +177,8 @@ const onclickSend = async(message,staytime,emoji) =>{
 
   let jsonbody = {}
 
-  jsonbody["reciver_mail"] = "joy.james.professional@gmail.com"
-  jsonbody["reciver_pass"] = "zthxauntwkwctbtf"
+  jsonbody["reciver_mail"] = process.env.EMAIL 
+  jsonbody["reciver_pass"] = process.env.PASSWORD 
 
 
   jsonbody["firstName"] = name
