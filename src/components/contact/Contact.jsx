@@ -13,7 +13,7 @@ export default function Contact() {
   const[name,setName] = useState("");
   const[email,setEmail] = useState("");
   const[phone,setPhone] = useState("");
-  const[topic,setTopic] = useState("");
+  const[topic,setTopic] = useState(""); 
   const[content,setContent] = useState("");
   const[clicked,setclicked] = useState(false)
   
@@ -29,6 +29,7 @@ export default function Contact() {
     
     if (clicked){
       wakeUpEmailServer()
+      
     }
   }, [clicked])
 
@@ -56,6 +57,33 @@ export default function Contact() {
     });
     
   }
+
+  // const sendEmailViaEmailServerr = new Promise((resolve,reject) => {
+  //   let response =fetch("https://email-server-node-js.onrender.com/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(jsonbody),
+  //   })
+  // })
+  
+  // async(jsonbody) =>{
+  //   let response = await fetch("https://email-server-node-js.onrender.com/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(jsonbody),
+  //   }).then(clearfields);
+  //   console.log(JSON.stringify(jsonbody))
+  //   console.log(response)
+  //   return new Promise((resolve, reject) => {
+  //     resolve("suscess");
+  //   });
+    
+  // }
+
 
   const notify = (message,staytime,emoji,jsonbody) => {
     toast.promise(
@@ -167,7 +195,7 @@ const validateSendingData = () => {
 const onclickSend = async(message,staytime,emoji) =>{
   // notify(message,staytime,emoji);
   console.log(name,email,phone,topic,content)
-  
+   
   try {
     validateSendingData()
   } catch (error) {
@@ -177,9 +205,8 @@ const onclickSend = async(message,staytime,emoji) =>{
 
   let jsonbody = {}
 
-  jsonbody["reciver_mail"] = `"${process.env.EMAIL}"` 
-  jsonbody["reciver_pass"] = `"${process.env.PASSWORD}"` 
-
+  jsonbody["reciver_mail"] = "joy.james.professional@gmail.com"
+  jsonbody["reciver_pass"] = "tidhnmpbnnjlcnip"
 
   jsonbody["firstName"] = name
   jsonbody["email"] = email
