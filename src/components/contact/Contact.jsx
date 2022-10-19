@@ -43,6 +43,7 @@ export default function Contact() {
   }
 
   const sendEmailViaEmailServer = async(jsonbody) =>{
+
     let response = await fetch("https://email-server-node-js.onrender.com/contact", {
       method: "POST",
       headers: {
@@ -50,40 +51,14 @@ export default function Contact() {
       },
       body: JSON.stringify(jsonbody),
     }).then(clearfields);
-    console.log(JSON.stringify(jsonbody))
-    console.log(response)
+
+    console.log("response--------",response)
+
     return new Promise((resolve, reject) => {
       resolve("suscess");
     });
     
   }
-
-  // const sendEmailViaEmailServerr = new Promise((resolve,reject) => {
-  //   let response =fetch("https://email-server-node-js.onrender.com/contact", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json;charset=utf-8",
-  //     },
-  //     body: JSON.stringify(jsonbody),
-  //   })
-  // })
-  
-  // async(jsonbody) =>{
-  //   let response = await fetch("https://email-server-node-js.onrender.com/contact", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json;charset=utf-8",
-  //     },
-  //     body: JSON.stringify(jsonbody),
-  //   }).then(clearfields);
-  //   console.log(JSON.stringify(jsonbody))
-  //   console.log(response)
-  //   return new Promise((resolve, reject) => {
-  //     resolve("suscess");
-  //   });
-    
-  // }
-
 
   const notify = (message,staytime,emoji,jsonbody) => {
     toast.promise(
@@ -193,9 +168,6 @@ const validateSendingData = () => {
 }
 
 const onclickSend = async(message,staytime,emoji) =>{
-  // notify(message,staytime,emoji);
-  console.log(name,email,phone,topic,content)
-   
   try {
     validateSendingData()
   } catch (error) {
