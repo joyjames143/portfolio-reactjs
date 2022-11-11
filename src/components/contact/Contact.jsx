@@ -208,7 +208,7 @@ const onclickSend = async(message,staytime,emoji) =>{
                 <a href={"https://www.linkedin.com/in/joyjames--/"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'  , color:"white"}}>
               <FaLinkedin size={33} color="#343434"/>
               </a>
-              <a href={"https://drive.google.com/file/d/1E6B9FO89nhfElEXnwplkUUdlpLDnPj3r/view?usp=sharing"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' , color:"white"}}>
+              <a href={"https://drive.google.com/file/d/1h7hJFMC2TVoV_f_ncGCg2yqX4DvkSjT9/view?usp=sharing"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' , color:"white"}}>
                 <BsFileEarmarkPdfFill size={32} color="#343434"/>
               </a>
               <a href={"https://github.com/joyjames143"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'  , color:"white"}}>
