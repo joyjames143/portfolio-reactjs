@@ -10,7 +10,7 @@ import { createBrowserRouter, RouterProvider} from "react-router-dom";
 const LazyAbout = React.lazy(()=>import('./components/about/About.jsx'))
 const LazyContact = React.lazy(()=>import('./components/contact/Contact.jsx'))
 const LazyProject = React.lazy(()=>import('./components/project/Project.jsx'))
-
+ 
 
 const router = createBrowserRouter([
     {

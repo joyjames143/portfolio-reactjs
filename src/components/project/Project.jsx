@@ -2,6 +2,7 @@ import React from 'react'
 import './Project.css';
 import Navbar from '../navbar/Navbar';
 
+import emailserver from "../../assets/images/emailserver.jpg"
 import codepen from "../../assets/images/codepen.jpg"
 import covid from "../../assets/images/covid.jpg"
 import expense from "../../assets/images/expense.jpg"
@@ -48,6 +49,7 @@ export default function Project() {
       <div className="test" >
         <div className='p-two'>
               <ul className="cards">
+              <CardsHolder   title={"Send Email Server (database storage)"} image={emailserver} hashImagecode={'U35}jhs:0gR-F}W=~As,^+oLIoWWmja}T1oJ'} githubLink='https://github.com/joyjames143/email-server-node' liveLink="https://email-server-node-js.onrender.com/" githubColor="aqua" hostcolor='orangered' />
                 <CardsHolder title={"Codpen Replica"} image={codepen} hashImagecode={'U35}jhs:0gR-F}W=~As,^+oLIoWWmja}T1oJ'} githubLink='https://github.com/joyjames143/jj-version-codepen' liveLink="https://codehere-jj.netlify.app/" githubColor="aqua" hostcolor='orangered' />
                 <CardsHolder title={"Corona Tracker"} image={covid} hashImagecode={'U7RW0c_N_3%100IBxv%L00t7%LIo00s8IUS7'} githubLink='https://github.com/joyjames143/covid-19-tracker' liveLink="https://jj-covid-tracker.netlify.app/" githubColor="aqua" hostcolor='orangered' />
                 <CardsHolder title={"Track Expense"} image={expense} hashImagecode={'U4Rp8._3-:~q00WBRVWB00WBt4Rj00WBt6WB'} githubLink='https://github.com/joyjames143/react-ExpenseTracer' liveLink="https://jj-expense-tracker.netlify.app/" githubColor="aqua" hostcolor='orangered' />

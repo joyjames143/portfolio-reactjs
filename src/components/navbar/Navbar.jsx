@@ -99,7 +99,10 @@ export default function Navbar() {
             <Link to="/" style={{ textDecoration: 'none' ,display:"flex",justifyContent:"center"}} >
             
               <GiSpookyHouse className='nav-icon' size={30} color="#f5f5f5"/>
-            </Link>
+              {/* <lord-icon src="https://cdn.lordicon.com/gmzxduhd.json" trigger="hover" colors="primary:#ffffff,secondary:#08a88a" style={{size:'30px'}}>
+</lord-icon> */}
+            </Link> 
+            
           </div>
           <div className='navbar-icon' >
                 <Link to="/projects" style={{ textDecoration: 'none' ,display:"flex",justifyContent:"center"}} >
